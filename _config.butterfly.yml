@@ -1,0 +1,46 @@
+# 网站基础信息（也可写在全局 _config.yml）
+title: Cookiewise 的博客
+subtitle: 记录技术与生活
+description: 个人技术博客，分享编程、AI、日常思考
+author: cookiewise03
+language: zh-CN
+timezone: Asia/Shanghai
+url: https://cookiewise03.github.io
+
+# 评论系统（推荐 Giscus，最简单免费）
+comments:
+  use: giscus          # 可选：giscus / gitalk / waline / twikoo
+  giscus:
+    repo: cookiewise03/cookiewise03.github.io   # 你的仓库
+    repo_id: "R_kgDOSyqcGg"                       # 去 https://giscus.app 获取
+    category: Announcements
+    category_id: "DIC_kwDOSyqcGs4C-nsV"
+    mapping: pathname
+    strict: 0
+    reactions_enabled: 1
+    emit_metadata: 0
+    input_position: top
+    theme: preferred_color_scheme
+    lang: zh-CN
+    loading: lazy
+
+# 本地搜索（强烈开启）
+local_search:
+  enable: true
+  trigger: auto
+  top_n_per_article: 1
+  unescape: false
+  preload: false
+
+# 暗黑模式
+darkmode:
+  enable: true
+  default: light
+  # 其他可根据喜好调整
+
+# 其他常用（根据需要开启）
+toc:
+  enable: true
+math:
+  enable: true
+  # katex: true
