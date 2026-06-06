@@ -91,3 +91,12 @@ menu:
   分类: /categories/ || fas fa-folder-open
   清单||fa fa-heartbeat:         # 带子菜单的菜单项
     电影: /movies/ || fas fa-video
+
+# 侧边栏作者卡片（Follow 按钮）
+aside:
+  card_author:
+    button:
+      enable: true
+      icon: fab fa-github
+      text: Follow Me
+      link: https://github.com/cookiewise03
