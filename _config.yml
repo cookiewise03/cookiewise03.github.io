@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: Cookiewise 的博客
+subtitle: 关于我的一切。
+description: 个人技术博客，分享学习生活与日常思考
 keywords:
-author: John Doe
-language: en
-timezone: ''
+author: cookiewise03
+language: zh-CN
+timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
