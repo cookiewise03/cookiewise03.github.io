@@ -9,7 +9,7 @@ subtitle:
     typeSpeed: 200
     backSpeed: 800
     # Loop（循环打字）← 改成 false 就不循环了
-    loop: ture        
+    loop: true        
     # source 调用三方服务
     source: true
     sub:
@@ -38,12 +38,17 @@ comments:
     loading: lazy
 
 # 本地搜索（强烈开启）
-local_search:
-  enable: true
-  trigger: auto
-  top_n_per_article: 1
-  unescape: false
-  preload: false
+search:
+  use: local_search
+  local_search:
+    enable: true
+    # Preload the search data when the page loads.
+    preload: false
+    # Show top n results per article, show all results by setting to -1
+    top_n_per_article: 1
+    # Unescape html strings to the readable one.
+    unescape: true
+    CDN:
 
 # 暗黑模式
 darkmode:
@@ -60,7 +65,7 @@ math:
 
 #头像
 avatar:
-  img: /img/avatar.jpg
+  img: /img/avatar.JPG
 
 #顶部图
 index_img: /img/cheer.jpg
@@ -69,3 +74,20 @@ index_top_img_height: 400px #顶部图高度
 
 # 站点图标
 favicon: /img/favicon.jpg
+
+# Navbar 导航栏配置
+nav:
+  display_title: true            # 是否显示网站标题
+  fixed: false                   # 导航栏是否固定（滚动时是否一直停留在顶部）
+
+# 资源文件夹
+post_asset_folder: true          # 是否启用文章资源文件夹
+
+# 菜单（Menu）配置
+menu:
+  首页: / || fas fa-home
+  时间轴: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  清单||fa fa-heartbeat:         # 带子菜单的菜单项
+    电影: /movies/ || fas fa-video
