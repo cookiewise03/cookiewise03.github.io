@@ -1,0 +1,14 @@
+/* Butterfly 全屏加载页背景改成本地图片 */
+#loading-box .loading-left-bg,
+#loading-box .loading-right-bg,
+#loading-box .configure-core {
+  background: url('/img/cheer.jpg') center center / cover no-repeat !important;
+}
+
+/* 可选：让中间文字更清楚 */
+#loading-box .loading-word {
+  color: #ffffff !important;
+  font-size: 18px !important;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+}
